@@ -1,0 +1,96 @@
+.container {  display: grid;
+    grid-template-columns: 0.3fr 2fr 0.7fr;
+    grid-template-rows: 0.3fr 2.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Logo Header Header"
+      "Navigation Main-text Extra-text"
+      "Footer Footer Footer";
+  }
+  
+  .Logo { grid-area: Logo;
+background-image:url("logo-social.png"); 
+background-size:contain;
+background-repeat: no-repeat;
+max-height: 15vh;
+min-height: 15vh;
+max-width: 20vw;
+min-width: 20vw;}
+  
+  .Header { grid-area: Header; 
+min-height: 15vh;
+max-height: 15vh;
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+background-image: url("lego.jpg");
+text-shadow: 2px 2px #5eff00;
+color: white;
+font-size:9vw;
+padding:1vh;
+box-sizing: border-box; }
+
+  
+  .Navigation { grid-area: Navigation;
+    overflow: auto;
+    max-width: 20vw;
+    min-width: 20vw;
+    max-height: 70vh;
+    min-height: 70vh;
+    text-align: center;
+    background-image: url("wood.jpg");
+    background-size:cover;
+    font-size:3vw;
+    color:yellow;
+
+ }
+  
+  .Main-text { grid-area: Main-text;
+background-color: red;
+min-height: 70vh;
+max-height: 70vh;
+max-width: 60vw;
+min-width: 60vw;
+overflow: auto;
+background-image: url("metal.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+color:antiquewhite;
+font-size:3vw;
+
+
+ }
+  
+  .Extra-text { grid-area: Extra-text;
+    max-height: 70vh;
+    min-height: 70vh;
+    max-width: 20vw;
+    min-width: 20vw;
+    overflow: auto; 
+    background-image: url("wood2.jpg");
+    background-size:cover;
+    color:bisque;
+}
+  
+  .Footer { grid-area: Footer; 
+background-color: green;
+min-height: 15vh;
+max-height: 15vh;
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */ 
+background-image: url("water.jpg");
+font-size:3vw;
+
+}
+
+  
+
+
+html { height: 100%; }
+
+body { min-height: 100%; 
+    margin: 0;
+}
+
